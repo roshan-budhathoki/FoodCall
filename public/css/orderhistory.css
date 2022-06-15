@@ -1,0 +1,67 @@
+.roww-head {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-right: 18rem;
+    gap: 4rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.cardd-head{
+    margin-bottom: 40px;
+}
+.ms-card-head {
+    background-color: #fff;
+    box-shadow: 0 1px 6px 1px rgb(69 65 78 / 10%); 
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.1);
+    width: 22rem;
+    padding: 1.5rem;
+}
+.ms-card-img-tab{
+    font-size: 1.5rem;
+}
+.ms-card-body-tab{
+    display: flex;
+    flex-wrap: wrap;
+}
+.new-top{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    justify-content: space-between;
+    align-items: center;
+}
+.quantity-top{
+    display: flex;
+    gap: 4.8rem;
+
+}
+.text-top{
+    font-size: 1.8rem;
+}
+.text-rs{
+    font-size: 1.3rem;
+    color: #ff3838;
+}
+.text-qty{
+    font-size: 1.3rem;
+    color: #666;
+    margin-right: 3rem;
+}
+.total-tab{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+.total-tab span{
+    color: #ff3838;
+}
+.status-tab p{
+    background: #6495ED; 
+    height:1.8rem; 
+    color:#fff; 
+    border-radius:1.2rem;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}

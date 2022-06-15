@@ -1,0 +1,120 @@
+.Checkout-page{
+    background: url(../Image/restaurant-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 12rem;
+    padding-bottom: 8rem;
+}
+
+.Checkout-page h1{
+    color: #222;
+    font-size: 4rem;
+}
+
+main{ 
+    height: 900px;
+    background-color: #FFFFFF;
+    padding: 50px; 
+    box-shadow: 0 0 2px #808080;
+} 
+main h2{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+    margin-left: 8px;
+}
+.checkout-container{
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+main .checkout-box{
+    height: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+}
+main .checkout-box .Billing-details{
+    width: 60%;
+}
+.billing-head{
+    background-color: #ff3838;
+    color: #fff;
+    width: 97%;
+    padding: 10px;
+    margin-top: .5rem;
+    text-transform: uppercase;
+}
+.checkout-form input, select, textarea{
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.checkout-form textarea{
+    width: 102%;
+}
+.shipping-form{
+    display: flex;
+}
+.form-group label{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: .2rem;
+}
+.form-group{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+
+
+
+
+ main .order-summary{
+    width: 30%;
+    height: 500px;
+    border: 1px solid rgba(236, 240, 241, 0.3);
+    padding: 5px;
+}
+main .order-summary .checkout-total h3{
+    color: #fff;
+    background-color: #ff3838;
+    text-transform: uppercase;
+    padding: 10px;
+}
+main .order-summary .checkout-total span{
+    float: right;
+}
+main .order-summary .checkout-total ul{
+    list-style: none;
+    padding: 10px;
+}
+main .order-summary .checkout-total ul li{
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+main .order-summary .checkout-total ul li a{
+    color: #222;
+    background-color: #ff3838;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 8px;
+    margin-top: 20px;
+    display: block;
+}
+main .order-summary .checkout-total ul li a:hover{
+    color: #fff;
+}
+
+
+
+

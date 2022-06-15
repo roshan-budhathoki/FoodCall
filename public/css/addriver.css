@@ -1,0 +1,46 @@
+.form-group{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: .1rem;
+    margin-right: 2rem;
+}
+.shipping-form{
+    display: flex;
+}
+.form-group label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #222;
+    margin-bottom: .2rem;
+}
+.checkout-form{
+    padding: 2.5rem;
+}
+.checkout-form input, textarea{
+    border: 1px solid #222;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.checkout-form textarea{
+    width: 102%;
+}
+.recent-grid .users .Billing-details input[type="submit"]{
+    color: #fff;
+    background-color: #ff3838;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    /* padding: 10px 8px;
+    margin-top: 20px; */
+    display: block;
+    border: none;
+    font-size: .8rem;
+}
+.recent-grid .users .Billing-details input[type="submit"]:hover{
+    background-color: #ec7474;
+
+}
+

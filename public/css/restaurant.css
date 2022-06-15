@@ -1,0 +1,57 @@
+.restaurant{
+    background: url(../Image/restaurant-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 20rem;
+    padding-bottom: 8rem;
+}
+.restaurant h1{
+    color: #222;
+    font-size: 4rem;
+}
+.restaurants .restaurant-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 80px;
+    margin-top: 90px;
+}
+.restaurants .restaurant-content .box{
+    flex: 1 1 30rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border: .1rem solid rgba(0,0,0,.3);
+    cursor: pointer;
+    border-radius: .5rem;
+    padding-bottom: 1rem;
+ }
+.restaurants .restaurant-content .box .image{
+    overflow: hidden;
+    width: 415px;
+    height: 240px;
+    transition: all .4s ease-out 0s;
+    transform: scale(1.05);
+}
+.restaurants .restaurant-content .box .image:hover{
+    transform: scale(1);
+}
+.restaurants .restaurant-content .box h3{
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+}
+.restaurants .restaurant-content .box .course-cap-bottom{
+    padding-top: 5px;
+}
+.restaurants .restaurant-content .box .course-cap-bottom ul li{
+    text-align: center;
+    margin-right: 14px;
+    color: #817e7e;
+    font-size: 13px;
+    line-height: 2rem;
+}
+.course-cap-bottom ul li i{
+    color: var(--red);
+}

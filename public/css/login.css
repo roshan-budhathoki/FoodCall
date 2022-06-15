@@ -1,0 +1,173 @@
+
+.logbox{
+    display: none;
+    background: rgb(216, 11, 11, 0.1);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+}
+.logbox1{ 
+    
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    /* padding: 40px 30px; */
+    margin: auto;
+    margin-top: 12rem; 
+    display: flex;
+    flex-direction: column;  
+}
+.close{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logbox1 .login-text{
+    color: #111;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+}
+.logbox1 .login-form .input-group input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    margin-bottom: 25px;
+}
+.logbox1 .login-form .input-group .logbtn{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    background: #ec7474;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+.logbox1 .login-form .input-group .logbtn:hover{
+    transform: translateY(-5px);
+    background: #ff3838;
+}
+.logbox1 p{
+    margin-left: 20px;
+}
+.login-register {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+.login-register a{
+    text-decoration: none;
+    color: #6c5ce7;
+}
+
+
+
+
+
+
+.Regbox{
+    display: none;
+    background: rgb(216, 11, 11, 0.1);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 12;
+}
+.logbox2{ 
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    min-height: 400px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    padding: 40px 30px;
+    margin: auto;
+    margin-top: 12rem; 
+    display: flex;
+    flex-direction: column;
+}
+/* .logbox2 .endbtn{
+    position: absolute;
+    right: 5rem;
+    font-size: 20px;
+    cursor: pointer;
+} */
+.closed{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logbox2 .login-text{
+    color: #111;
+    font-weight: 500;
+    font-size: 35px;
+    text-align: center;
+    /* margin-bottom: 20px;
+    display: block; */
+    
+}
+.logbox2 .login-form .input-group input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    margin-bottom: 25px;
+}
+.logbox2 .login-form .input-group .logbtn{
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+    background: #ec7474;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+.logbox2 .login-form .input-group .logbtn:hover{
+    transform: translateY(-5px);
+    background: #ff3838;
+}
+.logbox2 p{
+    margin-left: 20px;
+}
+.login-register {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.login-register a{
+    text-decoration: none;
+    color: #6c5ce7;
+}
+
+
+
+
+
+

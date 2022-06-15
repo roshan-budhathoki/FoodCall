@@ -1,0 +1,140 @@
+.menu{
+    background: url(../Image/menu-bgg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding-top: 22rem;
+    padding-bottom: 5rem;
+}
+.menu h1{
+    color: #222;
+    font-size: 4rem;
+    margin-left: 5rem;
+}
+.menu ul li{
+    margin-left: 5rem;
+    color: #817e7e;
+    font-size: 13px;
+    line-height: 2rem;
+    list-style: none;
+}
+
+.section-padding{
+    padding: 60px 60px;
+}
+#menu-filters{
+    text-align: center;
+}
+#menu-filters ul li{
+    display: inline-block;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+#menu-filters ul li a{
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #565656;
+    border-radius: 0px;
+    border: 1px solid #BBBBBB;
+    text-decoration: none;
+    cursor: pointer;
+}
+#menu-filters ul li a.active, #menu-filters ul li a:hover{
+    background: #ff3838;
+    color: #fff;
+    border: 1px solid #ff3838;
+}
+
+/* .menu-restaurant{
+    width: 50%;
+    float: left;
+    padding: 15px;
+    position: relative;
+}
+.menu-restaurant .menu-title{
+    float: left;
+    letter-spacing: 1px;
+    color: #ff3838;
+}
+.menu-restaurant .menu-line{
+    position: absolute;
+    bottom: 6px;
+    border-bottom: 1px dotted rgba(0,0,0,.3);
+    margin-left: .6rem;
+    margin-right: .6rem;
+} */
+
+
+.menu-cat{
+    background: #f5f5f5;
+}
+.menu-cat .slide .menu-title{
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: #fff;
+    background: #ff3838;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+ .menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.menu-container form{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    flex: 1 1 41rem;
+
+}
+.menu-box{
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+    flex: 1 1 41rem;
+    margin-bottom: 1.2rem;
+}
+ .menu-container .menu-box .info img{
+    height: 25%;
+    width: 25%;
+    
+}
+.menu-info{
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+}
+ .menu-container .menu-box h3{
+    font-size: 1.9rem;
+    color: #222;
+    padding-bottom: .5rem;
+}
+ .menu-container .menu-box p{
+    font-size: 1.7rem;
+    color: #222;
+    line-height: 2;
+}
+
+.menu-container .menu-box .add-cart{
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+
+ .menu-container .menu-box .add-cart i{
+    font-size: 2.5rem;
+    color: #ff3838;
+    padding-bottom: .5rem;
+    cursor: pointer;
+}
+
+
+
+

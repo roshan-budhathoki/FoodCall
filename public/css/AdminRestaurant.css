@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+}
+.sidebar{
+    position: fixed;
+    height: 100%;
+    width: 240px;
+    background: #ff3838;
+    transition: all 0.5s ease;
+}
+.sidebar.active{
+    width: 60px;
+}
+.sidebar .logo-details{
+    height: 80px;
+    width: 100%;
+    background: #111;
+    display: flex;
+    align-items: center;
+    /* margin-top: 15px; */   
+}
+.sidebar .logo-details i{
+    font-size: 28px;
+    color: #ff3838;
+    min-width: 60px;
+    text-align: center;
+}
+.sidebar .logo-details .logo_name{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+.sidebar .nav-links{
+    margin-top: 16px;
+}
+.sidebar .nav-links li{
+    height: 50px;
+    list-style: none;
+    width: 100%;
+}
+.sidebar .nav-links li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+.sidebar .nav-links li a:hover{
+    background: #ec7474;
+}
+.sidebar .nav-links li a i{
+    /* background: red; */
+    min-width: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+}
+.sidebar .nav-links li a .link-name{
+    color: #fff ;
+    font-size: 17px;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/****************** home section ******************/
+.home-section{
+    background: #f5f5f5;
+    /* position: relative; */
+    /* min-height: 100vh; */
+    width: calc(100% - 240px);
+    /* left: 240px; */
+    transition: all 0.5s ease;
+}
+.sidebar.active ~ .home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+.home-section nav{
+    position: fixed;
+    width: calc(100% - 240px);
+    z-index: 1;
+    left: 240px;
+    height: 80px;
+    background: #fff;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+} 
+.sidebar.active ~ .home-section nav{
+    width: calc(100% - 60px);
+    left: 60px;
+}
+.home-section nav .sidebar-btn{
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+.home-section nav .sidebar-btn i{
+    font-size: 25px;
+    margin-right: 10px;
+}
+.home-section nav .profile{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    min-width: 150px;
+    background: #F5F6FA;
+    border: 2px solid #EFEEF1;
+    border-radius: 6px;
+    padding: 0 15px 0 2px;
+}
+nav .profile i{
+    margin-left: 30px;
+    /* object-fit: cover;
+    border-radius: 6px; */
+}
+nav .profile .admin-name{
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 10px;
+    white-space: nowrap;
+}
+
+
+/*****************Restaurant lists *******************/
+
+.recent-grid{
+    padding-top: 140px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.card{
+    background: #fff;
+    border-radius: 5px;
+}
+.card-header{
+    padding: 1rem;
+}
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.card-header h2{
+    font-weight: 400;
+}
+.card-header button {
+    background: #ec7474;
+    border-radius: 10px;
+    padding: .5rem 1rem;
+    border: 1px solid #ff3838;
+}
+.card-header button a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .8rem;
+}
+table{
+    border-collapse: collapse;
+}
+thead tr{
+    border: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    background: #ff3838;
+}
+thead td{
+    font-weight: 600;
+    color: #fff;
+}
+td{
+    padding: 20px;
+    font-size: .9rem;
+    color: #222;
+}
+tbody td{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+tbody td a{
+    text-decoration: none;   
+}
+tbody td a i{
+    display: flex;
+    font-size: 15px;
+    justify-content: space-between;
+    line-height: 50px;
+}
+tbody tr:hover{
+    background-color: rgb(211, 208, 208);
+}
+.text-secondary{
+    color: #28a745;
+} 
+.ms-text-danger{
+    color: #d9534f;
+}
+
+/********************************* adding restaurants ********************************/
+.resmodaal{
+    background: rgb(216, 11, 11, 0.1);
+     display: none;
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     z-index: 11;
+ }
+ .respopup{ 
+     position: fixed;
+     top: 55%;
+     left: 60%;
+     transform: translate(-50%, -50%) scale(1.25);
+     width: 360px;
+     padding: 5px 30px;
+     background: #fff;
+     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+     border-radius: 10px;
+     transition: top 0ms ease-in-out 200ms,
+                 opacity 200ms ease-in-out 0ms,
+                 transform 200ms ease-in-out 0ms;
+ }
+ .respopup.active{
+     top: 50%;
+     opacity: 1;
+     transform: translate(-50%, -50%) scale(1);
+     transition: top 0ms ease-in-out 0ms,
+                 opacity 200ms ease-in-out 0ms,
+                 transform 200ms ease-in-out 0ms;
+ }
+ .respopup .closedbtn{
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     width: 15px;
+     height: 15px;
+     background: #888;
+     color: #eee;
+     text-align: center;
+     line-height: 15px;
+     border-radius: 15px;
+     cursor: pointer;
+ }
+ .respopup .form h2{
+     text-align: center;
+     color: #222;
+     margin: 10px 0px 20px;
+     font-size: 25px;
+     border-bottom: 1px solid rgba(0,0,0,0.1);
+ }
+ .respopup .form .form-element{
+     margin: 20px 0px;
+ }
+ .respopup .form .form-element label{
+     font-size: 14px;
+     color: #222;
+ }
+ .respopup .form .form-element input[type="text"],
+ .respopup .form .form-element input[type="num"],
+ .respopup .form .form-element input[type="file"]{
+     margin-top: 5px;
+     display: block;
+     width: 100%;
+     padding: 5px;
+     outline: none;
+     border: 1px solid #aaa;
+     border-radius: 5px;
+ }
+ /* .popup .form .form-element select{
+     margin-top: 5px;
+     display: block;
+     width: 100%;
+     padding: 5px;
+     outline: none;
+     border: 1px solid #aaa;
+     border-radius: 5px;
+ } */
+ .respopup .form .form-element button{
+     background: #ec7474;
+     border-radius: 10px;
+     padding: .5rem 1rem;
+     border: 1px solid #ff3838;
+     text-decoration: none;
+     color: #fff;
+     font-size: .6rem;
+     cursor: pointer;
+     margin-left: 7rem;
+ }
+
+
+ /********************************* updating restaurants ********************************/
+.updatemodal{
+    background: rgb(216, 11, 11, 0.1);
+     /* display: none; */
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     z-index: 11;
+ }
+ .updatepop{ 
+     position: fixed;
+     top: 55%;
+     left: 60%;
+     transform: translate(-50%, -50%) scale(1.25);
+     width: 360px;
+     padding: 5px 30px;
+     background: #fff;
+     box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+     border-radius: 10px;
+     transition: top 0ms ease-in-out 200ms,
+                 opacity 200ms ease-in-out 0ms,
+                 transform 200ms ease-in-out 0ms;
+ }
+ .updatepop.active{
+     top: 50%;
+     opacity: 1;
+     transform: translate(-50%, -50%) scale(1);
+     transition: top 0ms ease-in-out 0ms,
+                 opacity 200ms ease-in-out 0ms,
+                 transform 200ms ease-in-out 0ms;
+ }
+ .updatepop .outbtn{
+     position: absolute;
+     top: 10px;
+     right: 10px;
+     width: 15px;
+     height: 15px;
+     background: #888;
+     color: #eee;
+     text-align: center;
+     line-height: 15px;
+     border-radius: 15px;
+     cursor: pointer;
+ }
+ .updatepop .form h2{
+     text-align: center;
+     color: #222;
+     margin: 10px 0px 20px;
+     font-size: 25px;
+     border-bottom: 1px solid rgba(0,0,0,0.1);
+ }
+ .updatepop .form .form-element{
+     margin: 20px 0px;
+ }
+ .updatepop .form .form-element label{
+     font-size: 14px;
+     color: #222;
+ }
+ .updatepop .form .form-element input[type="text"],
+ .updatepop .form .form-element input[type="num"],
+ .updatepop .form .form-element input[type="file"]{
+     margin-top: 5px;
+     display: block;
+     width: 100%;
+     padding: 5px;
+     outline: none;
+     border: 1px solid #aaa;
+     border-radius: 5px;
+ }
+ .updatepop .form .form-element p{
+     font-size: 0.5rem;
+ }
+ /* .popup .form .form-element select{
+     margin-top: 5px;
+     display: block;
+     width: 100%;
+     padding: 5px;
+     outline: none;
+     border: 1px solid #aaa;
+     border-radius: 5px;
+ } */
+ .updatepop .form .form-element button{
+     background: #ec7474;
+     border-radius: 10px;
+     padding: .5rem 1rem;
+     border: 1px solid #ff3838;
+     text-decoration: none;
+     color: #fff;
+     font-size: .6rem;
+     cursor: pointer;
+     margin-left: 7rem;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1216px){
+    .sidebar{
+        width: 60px;
+    }
+    .sidebar.active{
+        width: 220px;
+    }
+    .home-section{
+        width: calc(100% - 60px);
+        left: 60px;
+    }
+    .sidebar.active ~ .home-section{
+        width: calc(100% - 220px);
+        left: 240px;
+    }
+    .home-section nav{
+       width: calc(100% - 60px);
+       left: 60px;
+    } 
+    .sidebar.active ~ .home-section nav{
+        width: calc(100% - 220px);
+        left: 220px;
+     }  
+}
+
+@media (max-width: 658px){
+    .home-section nav .sidebar-btn .dash{
+         display: none;
+    }
+    .home-section nav .profile{
+        min-width: 50px;
+        height: 50px;
+    }
+
+}
